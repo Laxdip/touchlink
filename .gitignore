@@ -1,0 +1,15 @@
+# Firebase secrets — NEVER commit these
+google-services.json
+lib/firebase_options.dart
+
+# Flutter build artifacts
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# IDE
+.idea/
+.vscode/
+*.iml
