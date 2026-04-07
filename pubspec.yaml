@@ -1,0 +1,45 @@
+name: touchlink
+description: A private couple app to send vibrations to each other.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase core
+  firebase_core: ^2.27.0
+
+  # Firebase anonymous auth
+  firebase_auth: ^4.17.0
+
+  # Firestore for pairing + token storage
+  cloud_firestore: ^4.15.0
+
+  # Firebase Cloud Messaging for push notifications
+  firebase_messaging: ^14.7.19
+
+  # Show local notifications when app is in foreground
+  flutter_local_notifications: ^16.3.0
+
+  # Vibration patterns
+  vibration: ^1.8.4
+
+  # UUID generation for pairing codes
+  uuid: ^4.3.3
+
+  # SharedPreferences for local persistence
+  shared_preferences: ^2.2.3
+
+  # HTTP for calling Firebase Functions / FCM HTTP v1 API
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,40 @@
+// ─────────────────────────────────────────────
+// firestore.rules
+// Paste this in Firebase Console →
+// Firestore Database → Rules
+// ─────────────────────────────────────────────
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Connections collection ──
+    // • Any authenticated user can read a connection (to join)
+    // • Only the creator (userAId) can create
+    // • Only the joining user (userBId empty → being set) can update
+    // • No deletes from client
+    match /connections/{code} {
+
+      // Anyone signed in can read (needed to check if code exists)
+      allow read: if request.auth != null;
+
+      // Create: must be authenticated, set own UID as userAId
+      allow create: if request.auth != null
+        && request.resource.data.userAId == request.auth.uid
+        && request.resource.data.userBId == '';
+
+      // Update: either userA refreshing their token,
+      //         or userB joining (setting their UID + token)
+      allow update: if request.auth != null && (
+        // User A updating their own token
+        (resource.data.userAId == request.auth.uid) ||
+        // User B joining (slot must be empty)
+        (resource.data.userBId == '' &&
+         request.resource.data.userBId == request.auth.uid)
+      );
+
+      // No client-side deletes
+      allow delete: if false;
+    }
+  }
+}
