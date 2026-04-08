@@ -1,4 +1,4 @@
-# TouchLink — Complete Setup Guide
+# TouchLink - Complete Setup Guide
 
 ## What You're Building
 A private couple app where two users pair via a 6-character code and send
