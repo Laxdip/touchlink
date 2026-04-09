@@ -34,7 +34,7 @@ service cloud.firestore {
       );
 
       // No client-side deletes
-      a
+      allow delete: if false;
     }
   }
 }
