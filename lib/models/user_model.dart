@@ -2,7 +2,7 @@
 // lib/models/user_model.dart
 // Represents a paired user stored in Firestore
 // ─────────────────────────────────────────────
-
+ 
 class UserModel {
   final String userId;      // Firebase anonymous uID
   final String fcmToken;    // Device FCM token for push notifications
