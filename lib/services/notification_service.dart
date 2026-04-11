@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────
 // lib/services/notification_service.dart
-// Handles FCM token retrieval, foreground
+// Handles FCM token retrieval, foreground 
 // notification display, and background handler.
 // ─────────────────────────────────────────────
 
