@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────
 
 class UserModel {
-  final String userId;      // Firebase anonymous UID
+  final String userId;      // Firebase anonymous uID
   final String fcmToken;    // Device FCM token for push notifications
   final String connectionCode; // 6-char pairing code
 
