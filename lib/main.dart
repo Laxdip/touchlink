@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────
 // lib/main.dart
-// App entry point: 
+// App entry point:
 //   1. Initialize Firebase
 //   2. Sign in anonymously
 //   3. Init notifications
