@@ -1,4 +1,4 @@
-# Firebase secrets — NEVER commit these
+# Firebase secrets — NEVER commit these 
 google-services.json
 lib/firebase_options.dart
 
