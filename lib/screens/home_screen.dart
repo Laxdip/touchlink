@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────
-// lib/screens/home_screen.dart 
+// lib/screens/home_screen.dart
 // Screen 2: The main "Send Touch" interface
 //   • Big tap button (single, double, long)
 //   • Anonymous mode toggle
