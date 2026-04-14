@@ -4,7 +4,7 @@
 //   • Big tap button (single, double, long)
 //   • Anonymous mode toggle
 //   • Connection status indicator
-// ─────────────────────────────────────────────
+// ──────────────────────────────────────────────
 
 import 'dart:async';
 import 'package:flutter/material.dart';
