@@ -1,7 +1,5 @@
 // ─────────────────────────────────────────────
-// firestore.rules
-// Paste this in Firebase Console →
-// Firestore Database → Rules
+
 // ─────────────────────────────────────────────
   
 rules_version = '2';
