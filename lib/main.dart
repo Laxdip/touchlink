@@ -1,4 +1,4 @@
-// ───────────────────────────────────────────────
+// ──────────────────────────────────────────────
 // lib/main.dart
 // App entry point:
 //   1. Initialize Firebase
@@ -6,7 +6,7 @@
 //   3. Init notifications
 //   4. Route to PairingScreen or HomeScreen
 //      (based on stored connection code)
-// ───────────────────────────────────────────────
+// ──────────────────────────────────────────────
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
