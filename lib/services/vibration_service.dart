@@ -1,7 +1,7 @@
-// ─────────────────────────────────────────────
+// ────────────────────────────────────────────
 // lib/services/vibration_service.dart
 // Handles all vibration pattern triggers
-// ─────────────────────────────────────────────
+// ────────────────────────────────────────────
 
 import 'package:vibration/vibration.dart';
 import '../utils/constants.dart';
